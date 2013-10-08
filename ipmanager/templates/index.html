@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block extra_head %}
+    <script src="{{ STATIC_URL }}js/app/controllers/hosts-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/services/hosts-service.js"></script>
+{% endblock %}
+{% block body %}
+<div class="padded-content">
+    <div id="main-content" class="container">
+        <ng-view></ng-view>
+    </div>
+</div>
+{% endblock %}

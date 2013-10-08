@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="span9 main">
+        <table class="table table-striped">
+            <tr>
+                <th>MAC</th>
+                <th>IP</th>
+            </tr>
+            <tr ng-repeat="host in hosts">
+                <td class="span2">{[{host.mac}]}</td>
+                <td class="span4">
+                    <editablespan model="host.ip" span-class="info" input-class="info-input" on-ready="updateItem(host)"></editablespan>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
